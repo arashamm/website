@@ -1,0 +1,31 @@
+.sect {
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: repeat(4 , 20em);
+}
+
+
+.MainWeb{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: aqua;
+}
+
+.MainApp{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* background-color: blue; */
+}
+
+
+.MainSoft{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* background-color: red; */
+}
+
+.MainAdds{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* background-color: green; */
+}

@@ -1,0 +1,21 @@
+
+
+
+.Wrapper {
+  display: grid;
+  grid-template-rows:minmax(100px ,1fr);
+  direction: rtl;
+
+  }
+  
+.Wrapper nav{
+
+
+align-self: center;  }
+  
+  
+  
+  .Wrapper nav a {
+    text-decoration: none;
+    margin-right: 60px;
+  }

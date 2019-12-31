@@ -1,0 +1,55 @@
+.EnServices {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.ServicesMenu {
+    border: 1px solid black;
+    height: 700px;
+    width: 350px;
+    position: scroll;
+    /* background-color: orange; */
+}
+
+#elem {
+    width: 100px;
+    height: 100px;
+    background-color: #6c4fff;
+}
+
+.ServicesMenu ul li {
+    color: black;
+    margin-top: 30px;
+    list-style-type: none;
+
+}
+
+.TopServicesCmp {
+    color: white;
+    padding: 25px;
+    background-color: #6c4fff;
+}
+
+
+.ServicesMenu ul li a {
+
+    text-decoration: none;
+
+}
+
+h1 {
+    font-size: 17px;
+}
+
+h1 a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.DetailView {
+    /* background-color: aqua; */
+
+    z-index: 4;
+    overflow: hidden;
+}

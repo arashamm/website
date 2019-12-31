@@ -1,0 +1,59 @@
+{
+  "homepage": "https://arashamm.github.io/website",
+  "name": "apllikagroup",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5002",
+  "dependencies": {
+    "axios": "^0.18.1",
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "fastify": "^2.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.17.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "react": "^16.8.6",
+    "react-bodymovin": "^2.0.0",
+    "react-dom": "^16.8.6",
+    "react-hook-form": "^3.7.4",
+    "react-lottie": "^1.2.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-web-tabs": "^1.0.1",
+    "styled-components": "^4.2.0",
+    "utf8": "^3.0.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "nodemon src/English/Server/NodeServer.js",
+    "devexample": "nodemon src/English/Server/example.js",
+    "devCun": "concurrently  \"npm run dev\" \"npm start\" "
+    
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.1.1",
+    "jshint": "^2.10.2",
+    "nodemon": "^1.19.1"
+  }
+}

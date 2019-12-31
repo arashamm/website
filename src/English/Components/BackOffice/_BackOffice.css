@@ -1,0 +1,12 @@
+.wrapperHeader {
+    color: blue;
+}
+
+form .input{ 
+    background-color: #f18;
+    display:block;
+} 
+
+form label {
+    display:block;
+}

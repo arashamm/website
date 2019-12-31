@@ -1,0 +1,219 @@
+.HomeMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 4fr 3fr 3fr 3fr; */
+}
+
+
+.HomeMain h1 {
+  font-size: 20px;
+}
+
+.MainDIv {
+  height: 30em;
+  align-items: center;
+  font-size: 15px;
+
+}
+
+.SimpleSvg {
+  width: 5em;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.MainOpt p,
+.MainAdds p {
+  width: 90%;
+}
+
+.MainApp p,
+.MainGeraphic p {
+  width: 70%;
+}
+
+
+/* main App ----------- */
+.MainApp {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr;
+  /* background-color: aqua; */
+}
+
+/* main opt ----------- */
+.MainOpt {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  /* background-color: orange; */
+}
+
+.MainOpt .Left img {
+  width: 25em;
+  height: 25em;
+}
+
+.MainOptParag {
+  margin-left: 30%;
+}
+
+.HomeMainOptSvg {
+  width: 70%;
+  height: 70%;
+}
+
+.HomeMain .Right {
+  justify-self: end;
+}
+
+
+/* main Geraphic ----------- */
+.MainGeraphic {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  /* background-color: red; */
+}
+
+.MainGeraphic .Right img {
+  width: 20rem;
+  height: 20rem;
+  margin-right: 4em;
+
+}
+
+
+
+/* main Adds ----------- */
+.MainAdds {
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr;
+  /* background-color: green; */
+  justify-items: center;
+}
+
+.MainAdds .Left img {
+  width: 300px;
+  height: 300px;
+  justify-self: center;
+  align-self: center;
+
+}
+
+.MainAdds .Left {
+  width: 20em;
+  height: 20em;
+
+}
+
+.MainAddsParag {
+  margin-left: 15%;
+}
+
+
+
+/* ----media secreen 946px  */
+
+
+@media screen and (max-width: 946px) {
+  .MainApp {
+    height: 45em;
+    grid-template-columns: 1fr 3fr;
+    grid-template-Rows: 1fr 1fr;
+    grid-template-areas:
+      "left left"
+      ". right"
+    ;
+  }
+
+  .MainAppParag {
+    width: 80%;
+  }
+
+  .MainApp .Right {
+    grid-area: right;
+  }
+
+
+
+  /* -------MainOpt */
+
+  .MainOpt {
+    height: 45em;
+    grid-template-columns: 2fr 1fr;
+    grid-template-Rows: 1fr 3fr;
+    grid-template-areas:
+      "leftTop RightTop"
+      "LeftBot RightBot"
+    ;
+  }
+
+  .MainOpt .MainOptParag {
+    /* background-color: aquamarine; */
+    justify-self: center;
+    right: 10%;
+    width: 90%;
+    position: relative;
+  }
+
+  .MainOpt .Left {
+    grid-area: LeftBot;
+  }
+
+  .MainOpt .Center {
+    grid-area: leftTop;
+  }
+
+  .MainOpt .Right {
+    grid-area: RightTop;
+  }
+
+
+
+  /* -------MainGeraphic */
+
+  .MainGeraphic {
+    height: 45em;
+    grid-template-columns: 1fr 4fr;
+    grid-template-Rows: 1fr 1fr;
+    grid-template-areas:
+      "LeftTop RightTop"
+      ". RightBot"
+    ;
+  }
+
+  .MainGeraphic .Center {
+    grid-area: RightTop;
+  }
+
+  .MainGeraphic .Right {
+    grid-area: RightBot;
+  }
+
+  /* -------MainAdds */
+  .MainAdds {
+    height: 45em;
+    grid-template-columns: 3fr 1fr;
+    grid-template-Rows: 1fr 3fr;
+    grid-template-areas:
+      "leftTop RightTop"
+      "LeftTop ."
+    ;
+  }
+
+
+  .MainAdds .Left img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .MainAdds .Left {
+    grid-area: LeftTop;
+  }
+
+  .MainAdds .Center {
+    grid-area: leftTop;
+  }
+
+  .MainAdds .Right {
+    grid-area: RightTop;
+  }
+}

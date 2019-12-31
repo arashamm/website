@@ -1,0 +1,90 @@
+.HomeHeader {
+  background: url('../../../Assets/HomePage/headerWall.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: aqua; */
+}
+
+.SectHeaderRight {
+  display: grid;
+  /* background-color: chartreuse; */
+}
+
+.SectHeaderleft {
+  display: grid;
+  /* background-color: blue; */
+}
+
+.HeaderLeftParag {
+  width: 80%;
+  justify-self: center;
+  align-self: center;
+  /* background-color: orange;   */
+}
+
+.HeaderLeftParag img {
+  width: 20px;
+  height: 20px;
+}
+
+.HeaderLeftParag h1 {
+  font-size: 25px;
+}
+
+.HeaderSvg {
+  height: 25em;
+  width: 25em;
+  /* background-color: orange;   */
+  justify-self: center;
+  align-self: center;
+}
+
+.HeaderLeftParag h1:nth-last-child(1) {
+  margin-left: 5%;
+}
+
+
+
+.HeaderBtn {
+  color: white;
+  width: 80px;
+  height: 30px;
+  border-radius: 10%;
+  justify-self: start;
+  background-color: blueviolet;
+  /* background-color: indianred; */
+}
+
+@media screen and (max-width: 787px) {
+  .HomeHeader {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto);
+    direction: rtl;
+    height: 800px;
+  }
+
+  .SectHeaderleft {
+    display: grid;
+    text-align: center;
+  }
+
+  .SectHeaderRight {
+    display: grid;
+  }
+
+  .parag {
+    text-align: center;
+    grid-row: 1/6;
+    grid-column: 2 / 4;
+  }
+
+      .parag .HeaderBtn {
+        justify-self: center;
+      }
+
+}

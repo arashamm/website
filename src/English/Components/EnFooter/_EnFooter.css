@@ -1,0 +1,221 @@
+
+
+.FooterCl {
+    color: aliceblue;
+    /* background-color: gray; */
+    height: 10em;
+    display: grid;
+    grid-template-columns : 3fr 2fr;
+    /* height: 10em; */
+}
+
+
+.FooterCl h{
+    font-size: 14px;
+}
+
+
+
+.FooterLeft {
+    /* background-color: firebrick; */
+    display: grid;
+    color:gray;
+    background-color: #efefef;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;   
+    grid-auto-rows: minmax(40px, auto);
+    grid-template-areas: 
+    "Logo Logo Logo Logo Logo"
+    "Titles Titles Titles Titles Titles"
+    "Multimedia Menu Menu Menu Menu";
+}
+
+.FooterLeft p{
+    font-size: 11px;
+}
+
+.FooterLeft h1{
+    font-size: 20px;
+}
+
+
+
+.Logo{
+    /* background-color: hotpink; */
+    grid-area: Logo;
+}
+
+.Titles
+{
+    display:flex;
+    grid-area: Titles;
+    /* background-color: chocolate; */
+}
+
+.Titles h1{
+font-size: 16px;
+}
+
+
+.Menu{
+    display: grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+    grid-area: Menu;
+    align-items: center;
+    /* background-color: royalblue; */
+
+}
+
+.Multimedia{
+    /* background-color: blueviolet; */
+    grid-area: Multimedia;
+    align-items: center;
+    /* grid-template-columns : 1fr;
+    grid-template-Rows: 1fr 1fr 1fr; */
+}
+
+
+
+.Multimedia img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+.Multimedia span{
+    display: flex;
+    justify-self: center;
+    padding-left: 7%;
+}
+
+.Multimedia p{
+    display: flex;
+    justify-self: center;
+    padding-left: 5%;
+}
+
+
+
+
+/* ----------------FooterRight--------------------- */
+.FooterRight{
+    background-color: rgb(98, 0, 255);
+    display: grid;
+    grid-template-columns : 1fr 1fr;
+    grid-template-Rows : 1fr 1fr 1fr;
+    grid-template-areas: 
+    "Parag Parag "
+    "Emails Emails"
+    "Phone Phone";
+}
+
+.FooterRight{
+font-size: 13px;
+}
+
+
+
+.Parag{
+    /* background-color: tomato; */
+    grid-area: Parag;
+    font-size: 12px;
+    width: 70%;
+    margin-left: 10%;
+}
+
+.Emails{
+    /* background-color: violet; */
+    grid-area: Emails;
+}
+
+.EmailTitle{
+    justify-self: center;
+}
+
+
+.Emails{
+    display: grid;
+    grid-template-columns: 1fr 3fr;   
+}
+
+.EmailsCont p::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    /* background-color: white; */
+    border-radius: 50%;
+}
+
+.Phone{
+    display: grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+    /* background-color: cadetblue; */
+    grid-area: Phone;
+
+}
+
+.IranPhone{
+    /* border: 2px solid red; */
+    grid-area: IranPhone;
+    grid-column: 1/3;
+    display: flex;
+}
+
+.CanadaPhone{
+    /* border: 2px solid red; */
+    grid-area: CanadaPhone;
+    grid-column: 3/5;
+    display: flex;
+
+}
+
+
+
+
+/* ----------------max-width: 1100px--------------------- */
+@media screen and (max-width: 1100px) {
+
+.FooterCl{
+}
+
+    .FooterLeft {
+        /* background-color: firebrick; */
+        display: grid;
+        grid-template-columns: 1fr 2fr;   
+        grid-template-rows: 2fr 1fr 3fr;   
+         /* grid-auto-rows: minmax(40px, auto); */
+        grid-template-areas: 
+        "Logo Menu"
+        "Titles Menu"
+        "Multimedia Menu";
+    }
+
+
+    .Menu{
+        display: grid;
+        grid-template-columns : 1fr 2fr;
+        grid-template-Rows : 1fr 1fr;
+        grid-area: Menu;
+        /* background-color: royalblue; */
+        justify-items: center;
+        align-items: center;
+    
+    }
+
+    .FooterRight{
+    }
+
+} 
+
+
+
+
+@media screen and (max-width: 940px) {
+
+    .FooterCl {    
+        grid-template-columns : 1fr;
+        /* height: 10em; */
+    }
+
+
+} 
+

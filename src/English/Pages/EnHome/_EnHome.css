@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper { 
+  
+display: grid;
+grid-template-columns: 1fr;
+/* grid-template-rows :1fr 3fr 2fr 5fr 2fr; */
+/* grid-template-areas: 
+"HomeHead"
+"TopMain"
+"HomeMain"
+; */
+}
+
+
+
+
+
+
+.TopMain{
+grid-area: TopMain;
+/* background-color: red; */
+
+}
+
+.HomeMain{
+grid-area: HomeMain;
+/* background-color: brown; */
+
+}
+
+.Footer{
+grid-area: Footer;
+/* background-color: purple; */
+
+}
+
+
+
+@media screen and (max-width: 744px) {
+  .wrapper { 
+  
+    display: grid;
+
+ 
+    }
+}

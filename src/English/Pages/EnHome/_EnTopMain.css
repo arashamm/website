@@ -1,0 +1,105 @@
+.topMain {
+ background-image: url('./../../../Assets/HomePage/TopMainBack.png')  ; 
+ background-repeat: no-repeat; 
+ background-size: cover; 
+ /* height:13em; */
+ display: grid;
+ grid-template-columns: 1fr 3fr;
+ direction: rtl;
+ color: rgb(146, 142, 142);
+}
+
+.topMainRight{
+    /* background-color: brown; */
+    display: grid;
+
+}
+
+
+.topMainRight img {
+    width: 10em;
+    height:10em;
+    justify-self: center;
+    align-self: center;
+    /* background-color: aqua; */
+    }
+
+
+.TopMainParag{
+/* border:1px solid white; */
+margin-left: 10%;
+align-self: center;
+
+}
+
+
+
+
+
+.TopMainLeft {
+    display: grid;
+    text-align: left;
+    color: white;
+}
+
+
+
+
+.TopMainLeft h1{
+    font-size: 18px;
+}
+
+.TopMainLeft p{
+    font-size: 13px;
+}
+
+.TopMainBtn{
+    width: 50px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: blueviolet;
+}
+
+
+
+
+    
+    @media screen and (max-width: 787px) {
+        .topMain {
+           display: grid;
+            grid-template-columns: 1fr ;
+             height: 25em;
+
+            }
+
+.TopMainParag{
+text-align: center;
+margin-left: 0%;
+
+}
+            
+
+        
+        .topMainRight{
+            justify-self: center;
+            align-self: center;
+            }
+
+
+
+
+.topMainSVG  img{
+    /* grid-column: 2 / 3 ; */
+    justify-self: center;
+}
+
+
+
+
+}
+
+
+
+          
+ 
+        
