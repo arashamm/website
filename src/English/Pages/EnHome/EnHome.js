@@ -67,7 +67,7 @@ class EnHome extends Component {
 
                         <div class='SectHeaderleft'>
                           <div class='HeaderLeftParag'>
-                              <span class='spanH'><img src={ApllikaLogo}/><h1>َWeb badvisers</h1></span>
+                              <span class='spanH'><img src={ApllikaLogo}/><h1>َWeb badvisers..</h1></span>
                               <h1>Grow Your Bussines With Our It And  Digital Marketing Solotuions </h1>
                               <p>Applica is an Top-Rate web & mobile app development Team that helps businesses thrive in the digital world. We specialize in creating digital form factors  , E-commerce , advertising & promotion  and  online start up bussines web and mobile applications that are secure, scalable and intuitive enough to make your goals & Dreams come true and make your bussines so much  better and more professional.</p>
                               <div class='HeaderBtn'>Contact</div>
