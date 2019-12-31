@@ -1,9 +1,9 @@
 {
-  "homepage": "https://arashamm.github.io/website",
   "name": "apllikagroup",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5002",
+  "homepage": "http://arashamm.github.io/website",
   "dependencies": {
     "axios": "^0.18.1",
     "bcrypt": "^3.0.7",
